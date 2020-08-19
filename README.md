@@ -6,7 +6,7 @@ Deepfake Remy Generator: Wasserstein GAN with Gradient Penalty (WGAN-GP)
 <!--- FOR SIDE_BY_SIDE IMGS IN MARKDOWN: APPLY TABLE --->
 <!--- ![alt-text-1](image1.png "title-1") ![alt-text-2](image2.png "title-2") --->
 
-![alt-text-1](https://github.com/RLR-GitHub/RemyWGAN-GP/blob/master/animation_single_128_laying_down.gifg "title-1") ![alt-text-2](https://github.com/RLR-GitHub/RemyWGAN-GP/blob/master/animation_single_128_standing_up.gif "title-2")
+![alt-text-1](https://github.com/RLR-GitHub/RemyWGAN-GP/blob/master/animation_single_128_laying_down.gif "title-1") ![alt-text-2](https://github.com/RLR-GitHub/RemyWGAN-GP/blob/master/animation_single_128_standing_up.gif "title-2")
 
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
 
