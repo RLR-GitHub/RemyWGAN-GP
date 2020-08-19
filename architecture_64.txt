@@ -1,0 +1,52 @@
+
+=================================================================
+CRITIC ARCHITECTURE
+-----------------------------------------------------------------
+
+Layer: critic_input           Output: ( None,   64,   64,     3 )
+Layer: critic_conv_0          Output: ( None,   32,   32,    32 )
+Layer: critic_conv_1          Output: ( None,   16,   16,    64 )
+Layer: critic_conv_2          Output: ( None,    8,    8,   128 )
+Layer: flatten                Output: ( None,              8192 )
+Layer: dense_1                Output: ( None,                 1 )
+
+=================================================================
+
+=================================================================
+GENERATOR ARCHITECTURE
+-----------------------------------------------------------------
+
+Layer: generator_input        Output: ( None,               100 )
+Layer: dense                  Output: ( None,              4096 )
+Layer: activation             Output: ( None,              4096 )
+Layer: reshape                Output: ( None,    8,    8,    64 )
+Layer: generator_t_conv_0     Output: ( None,   16,   16,    64 )
+Layer: activation_1           Output: ( None,   16,   16,    64 )
+Layer: generator_t_conv_1     Output: ( None,   32,   32,    64 )
+Layer: activation_2           Output: ( None,   32,   32,    64 )
+Layer: generator_t_conv_2     Output: ( None,   64,   64,    64 )
+Layer: activation_3           Output: ( None,   64,   64,    64 )
+Layer: generator_t_conv_3     Output: ( None,   64,   64,     3 )
+Layer: activation_4           Output: ( None,   64,   64,     3 )
+
+=================================================================
+
+=================================================================
+PARAMETERS
+-----------------------------------------------------------------
+
+Training Set: /home/rory/Documents/01_myDatasets/remy/best_300_faces/
+Batch Size: 30
+Optimizer: rmsprop
+Critic Learning Rate: 0.0005
+Critic Conv Filter Size: [32, 64, 128]
+Critic Stride Size: [2, 2, 2]
+Critic Kernel Size: [7, 5, 3]
+Generator Learning Rate: 0.0005
+Generator Initial Dense Layer Size: (8, 8, 64)
+Generator Conv Filter Size: [64, 64, 64, 3]
+Generator Stride Size: [2, 2, 2, 1]
+Generator Kernel Size: [4, 4, 4, 4]
+Generator Upsample: [1, 1, 1, 1]
+
+=================================================================
